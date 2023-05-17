@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="origin"
+           fetch="https://cri.atol.ru/bitbucket/scm/p133/p133.git"
+           revision="develop"
+           review="" />
+  <remote  name="github"
+           fetch="https://cri.atol.ru/bitbucket/scm/p133/artery.git"
+           revision="master"
+           review="" />
+  <default remote="origin"
+           revision="master"
+           sync-j="4" />
+
+  <project name="Platform133" path="p133" groups="app">
+    <linkfile src="README.md" dest="README.md"></linkfile>
+  </project>
+  <project name="alibaba/git-repo-go-doc" path="website" groups="app"/>
+  <project name="jiangxin/goconfig" path="lib/goconfig" groups="lib" remote="github" />
+  <project name="jiangxin/multi-log" path="lib/multi-log" groups="lib" remote="github" />
+</manifest>
